@@ -13,6 +13,10 @@
 		B8EC24121AD6F835004B2064 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8EC24111AD6F835004B2064 /* Images.xcassets */; };
 		B8EC24151AD6F835004B2064 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8EC24131AD6F835004B2064 /* LaunchScreen.xib */; };
 		B8EC24211AD6F835004B2064 /* CookiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EC24201AD6F835004B2064 /* CookiesTests.swift */; };
+		B8EC24311AD6F8AD004B2064 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8EC24301AD6F8AD004B2064 /* NotificationCenter.framework */; };
+		B8EC24361AD6F8AD004B2064 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EC24351AD6F8AD004B2064 /* TodayViewController.swift */; };
+		B8EC24381AD6F8AD004B2064 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8EC24371AD6F8AD004B2064 /* MainInterface.storyboard */; };
+		B8EC243B1AD6F8AD004B2064 /* QuickCookies.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B8EC242E1AD6F8AD004B2064 /* QuickCookies.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +27,28 @@
 			remoteGlobalIDString = B8EC24041AD6F835004B2064;
 			remoteInfo = Cookies;
 		};
+		B8EC24391AD6F8AD004B2064 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8EC23FD1AD6F835004B2064 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8EC242D1AD6F8AD004B2064;
+			remoteInfo = QuickCookies;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B8EC243F1AD6F8AD004B2064 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B8EC243B1AD6F8AD004B2064 /* QuickCookies.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B8EC24051AD6F835004B2064 /* Cookies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookies.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +61,11 @@
 		B8EC241A1AD6F835004B2064 /* CookiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8EC241F1AD6F835004B2064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8EC24201AD6F835004B2064 /* CookiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookiesTests.swift; sourceTree = "<group>"; };
+		B8EC242E1AD6F8AD004B2064 /* QuickCookies.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QuickCookies.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8EC24301AD6F8AD004B2064 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		B8EC24341AD6F8AD004B2064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8EC24351AD6F8AD004B2064 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		B8EC24371AD6F8AD004B2064 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +83,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B8EC242B1AD6F8AD004B2064 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8EC24311AD6F8AD004B2064 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +99,8 @@
 			children = (
 				B8EC24071AD6F835004B2064 /* Cookies */,
 				B8EC241D1AD6F835004B2064 /* CookiesTests */,
+				B8EC24321AD6F8AD004B2064 /* QuickCookies */,
+				B8EC242F1AD6F8AD004B2064 /* Frameworks */,
 				B8EC24061AD6F835004B2064 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +110,7 @@
 			children = (
 				B8EC24051AD6F835004B2064 /* Cookies.app */,
 				B8EC241A1AD6F835004B2064 /* CookiesTests.xctest */,
+				B8EC242E1AD6F8AD004B2064 /* QuickCookies.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +153,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B8EC242F1AD6F8AD004B2064 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8EC24301AD6F8AD004B2064 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8EC24321AD6F8AD004B2064 /* QuickCookies */ = {
+			isa = PBXGroup;
+			children = (
+				B8EC24351AD6F8AD004B2064 /* TodayViewController.swift */,
+				B8EC24371AD6F8AD004B2064 /* MainInterface.storyboard */,
+				B8EC24331AD6F8AD004B2064 /* Supporting Files */,
+			);
+			path = QuickCookies;
+			sourceTree = "<group>";
+		};
+		B8EC24331AD6F8AD004B2064 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8EC24341AD6F8AD004B2064 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +189,12 @@
 				B8EC24011AD6F835004B2064 /* Sources */,
 				B8EC24021AD6F835004B2064 /* Frameworks */,
 				B8EC24031AD6F835004B2064 /* Resources */,
+				B8EC243F1AD6F8AD004B2064 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B8EC243A1AD6F8AD004B2064 /* PBXTargetDependency */,
 			);
 			name = Cookies;
 			productName = Cookies;
@@ -150,6 +219,23 @@
 			productReference = B8EC241A1AD6F835004B2064 /* CookiesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B8EC242D1AD6F8AD004B2064 /* QuickCookies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8EC243C1AD6F8AD004B2064 /* Build configuration list for PBXNativeTarget "QuickCookies" */;
+			buildPhases = (
+				B8EC242A1AD6F8AD004B2064 /* Sources */,
+				B8EC242B1AD6F8AD004B2064 /* Frameworks */,
+				B8EC242C1AD6F8AD004B2064 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickCookies;
+			productName = QuickCookies;
+			productReference = B8EC242E1AD6F8AD004B2064 /* QuickCookies.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +251,9 @@
 					B8EC24191AD6F835004B2064 = {
 						CreatedOnToolsVersion = 6.3;
 						TestTargetID = B8EC24041AD6F835004B2064;
+					};
+					B8EC242D1AD6F8AD004B2064 = {
+						CreatedOnToolsVersion = 6.3;
 					};
 				};
 			};
@@ -183,6 +272,7 @@
 			targets = (
 				B8EC24041AD6F835004B2064 /* Cookies */,
 				B8EC24191AD6F835004B2064 /* CookiesTests */,
+				B8EC242D1AD6F8AD004B2064 /* QuickCookies */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +292,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8EC242C1AD6F8AD004B2064 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8EC24381AD6F8AD004B2064 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +323,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B8EC242A1AD6F8AD004B2064 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8EC24361AD6F8AD004B2064 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +338,11 @@
 			isa = PBXTargetDependency;
 			target = B8EC24041AD6F835004B2064 /* Cookies */;
 			targetProxy = B8EC241B1AD6F835004B2064 /* PBXContainerItemProxy */;
+		};
+		B8EC243A1AD6F8AD004B2064 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8EC242D1AD6F8AD004B2064 /* QuickCookies */;
+			targetProxy = B8EC24391AD6F8AD004B2064 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -390,6 +501,30 @@
 			};
 			name = Release;
 		};
+		B8EC243D1AD6F8AD004B2064 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QuickCookies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B8EC243E1AD6F8AD004B2064 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = QuickCookies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +550,14 @@
 			buildConfigurations = (
 				B8EC24281AD6F835004B2064 /* Debug */,
 				B8EC24291AD6F835004B2064 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B8EC243C1AD6F8AD004B2064 /* Build configuration list for PBXNativeTarget "QuickCookies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8EC243D1AD6F8AD004B2064 /* Debug */,
+				B8EC243E1AD6F8AD004B2064 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
